@@ -12,6 +12,7 @@ def set_random_ordering(ordering: List[Variable]):
 
 
 def set_ordering(ordering: List[Variable], label_ordering_choice: str):
+    print("set_ordering")
     if label_ordering_choice == 'random':
         ordering = set_random_ordering(ordering)
         return ordering

@@ -148,5 +148,11 @@ def compute_sets_of_constraints(ordering: List[Variable], constraints: List[Cons
     #         print('empty set')
     #     print('***\n')
     # print('-'*80)
+    
+    print('\nFinal ordered constraints:')
+    for variable, constrs in ordered_constraints.items():
+        print(f'Variable {variable.readable()}:')
+        for constr in constrs:
+            print(f'  - {constr.readable()}')
 
     return ordered_constraints
